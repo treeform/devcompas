@@ -13,11 +13,11 @@
     {
       "id": 2,
       "question": "For variable names, I believe in:",
-      "options": [
-        {"text": "Descriptive, self-documenting names even if they're long", "abstract": -1, "human": 2},
-        {"text": "Short, concise names that experts understand", "abstract": 1, "human": -2},
-        {"text": "Domain-specific terminology and conventions", "abstract": 0, "human": -1},
-        {"text": "Names that clearly express intent to any reader", "abstract": -1, "human": 1}
+      "options": [  
+        {"text": "Descriptive, self-documenting names even if they're long", "abstract": 2, "human": 2},
+        {"text": "Short, concise names and abbreviations", "abstract": -1, "human": 0},
+        {"text": "Domain-specific terminology and conventions", "abstract": 0, "human": 0},
+        {"text": "Pefixes and suffixes", "abstract": 2, "human": -2}
       ]
     },
     {
@@ -34,10 +34,10 @@
       "id": 4,
       "question": "My preferred approach to error handling is:",
       "options": [
-        {"text": "Explicit error returns that must be checked", "abstract": -1, "human": -1},
-        {"text": "Exceptions for exceptional circumstances", "abstract": 1, "human": 1},
-        {"text": "Monadic error types (Result, Maybe, etc.)", "abstract": 2, "human": -1},
-        {"text": "Whatever prevents bugs most effectively", "abstract": 0, "human": 0}
+        {"text": "Using return error codes", "abstract": -1, "human": -1},
+        {"text": "Using exceptions", "abstract": 1, "human": 1},
+        {"text": "Using monadic error types (Result, Maybe, etc.)", "abstract": 2, "human": -1},
+        {"text": "Based on the code convention of the project", "abstract": 0, "human": 0}
       ]
     },
     {
@@ -56,17 +56,17 @@
       "options": [
         {"text": "Simple arrays and objects that anyone can understand", "abstract": -2, "human": -2},
         {"text": "Object-oriented with inheritance and interfaces", "abstract": 2, "human": 0 },
-        {"text": "Fuctincal style with immutable data", "abstract": 2, "human": -2},
+        {"text": "Functional style with immutable data", "abstract": 2, "human": -2},
         {"text": "What is natural for the problem domain", "abstract": 0, "human": 0}
       ]
     },
     {
       "id": 7,
-      "question": "When choosing between functional and imperative styles:",
+      "question": "Which style of programming do you prefer:",
       "options": [
-        {"text": "Functional style is more elegant and composable", "abstract": 2, "human": 0},
-        {"text": "Imperative style is clearer and more direct", "abstract": -2, "human": 1},
-        {"text": "Mix both based on the problem domain", "abstract": 0, "human": 1},
+        {"text": "Functional style", "abstract": 0, "human": 0},
+        {"text": "Imperative style", "abstract": -2, "human": 1},
+        {"text": "Object-oriented style", "abstract": 2, "human": 1},
         {"text": "Whatever the team is most comfortable with", "abstract": 0, "human": 2}
       ]
     },
@@ -152,22 +152,22 @@
     },
     {
       "id": 16,
-      "question": "For dependency management, I prefer:",
+      "question": "For libraries, I prefer:",
       "options": [
-        {"text": "Minimal dependencies, build things myself", "abstract": -1, "human": -1},
-        {"text": "Curated, well-maintained libraries", "abstract": 0, "human": 1},
-        {"text": "Composable micro-libraries", "abstract": 2, "human": 0},
-        {"text": "Batteries-included frameworks", "abstract": 1, "human": 2}
+        {"text": "Normal libraries that everyone uses", "abstract": 0, "human": 0},
+        {"text": "Build things myself from scratch", "abstract": -1, "human": -2},
+        {"text": "Small, header-only, or micro-libraries", "abstract": 0, "human": 1},
+        {"text": "Large, batteries-included frameworks", "abstract": 2, "human": 0}
       ]
     },
     {
       "id": 17,
       "question": "My attitude toward type systems is:",
       "options": [
-        {"text": "Strong static types prevent entire classes of bugs", "abstract": 1, "human": -1},
-        {"text": "Dynamic types offer more flexibility", "abstract": 0, "human": 1},
-        {"text": "Dependent types can encode program correctness", "abstract": 2, "human": -2},
-        {"text": "Whatever helps the team be productive", "abstract": 0, "human": 2}
+        {"text": "I like strong static types", "abstract": 0, "human": -2},
+        {"text": "I like dynamic types", "abstract": 0, "human": 2},
+        {"text": "I like a mix of static and dynamic types", "abstract": 0, "human": 0},
+        {"text": "I like composable types", "abstract": 2, "human": 0}
       ]
     },
     {
