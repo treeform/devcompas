@@ -2,6 +2,8 @@
 
 A programming philosophy quiz that maps your coding preferences on a political compass-style chart with two key dimensions: **Abstract Style ↔ Concrete Style** and **Easy for Humans ↕ Easy for Computers**.
 
+Take the quiz here: https://treeform.github.io/devcompas/
+
 ## 🧭 What is Dev Compass?
 
 Dev Compass helps developers understand their programming philosophy by answering 20 carefully crafted questions about coding preferences, design choices, and development approaches. Your answers are plotted on a compass that reveals which quadrant best describes your programming style.
