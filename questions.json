@@ -1,0 +1,204 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "When writing code, I prefer:",
+      "options": [
+        {"text": "High-level abstractions that hide implementation details", "abstract": 2, "human": 1},
+        {"text": "Direct, explicit code that shows exactly what's happening", "abstract": -2, "human": 0},
+        {"text": "A balance of abstraction and clarity", "abstract": 0, "human": 0},
+        {"text": "Whatever makes the code most maintainable", "abstract": 1, "human": 1}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "For variable names, I believe in:",
+      "options": [
+        {"text": "Descriptive, self-documenting names even if they're long", "abstract": -1, "human": 2},
+        {"text": "Short, concise names that experts understand", "abstract": 1, "human": -2},
+        {"text": "Domain-specific terminology and conventions", "abstract": 0, "human": -1},
+        {"text": "Names that clearly express intent to any reader", "abstract": -1, "human": 1}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "When designing APIs, I prioritize:",
+      "options": [
+        {"text": "Intuitive interfaces that feel natural to use", "abstract": 0, "human": 2},
+        {"text": "Minimal, orthogonal operations", "abstract": 2, "human": -1},
+        {"text": "Performance and efficiency above all", "abstract": -1, "human": -2},
+        {"text": "Consistency with existing patterns", "abstract": 1, "human": 0}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "My preferred approach to error handling is:",
+      "options": [
+        {"text": "Explicit error returns that must be checked", "abstract": -1, "human": -1},
+        {"text": "Exceptions for exceptional circumstances", "abstract": 1, "human": 1},
+        {"text": "Monadic error types (Result, Maybe, etc.)", "abstract": 2, "human": -1},
+        {"text": "Whatever prevents bugs most effectively", "abstract": 0, "human": 0}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "When it comes to code comments, I believe:",
+      "options": [
+        {"text": "Code should be self-documenting, comments are code smell", "abstract": 1, "human": -1},
+        {"text": "Comments should explain the 'why', not the 'what'", "abstract": 0, "human": 1},
+        {"text": "Extensive documentation makes code more accessible", "abstract": -1, "human": 2},
+        {"text": "Comments are only needed for complex algorithms", "abstract": 0, "human": -1}
+      ]
+    },
+    {
+      "id": 6,
+      "question": "For data structures, I prefer:",
+      "options": [
+        {"text": "Simple arrays and objects that anyone can understand", "abstract": -2, "human": 2},
+        {"text": "Specialized structures that encode invariants", "abstract": 2, "human": -1},
+        {"text": "Whatever gives the best performance characteristics", "abstract": 0, "human": -2},
+        {"text": "Standard library collections", "abstract": 0, "human": 0}
+      ]
+    },
+    {
+      "id": 7,
+      "question": "When choosing between functional and imperative styles:",
+      "options": [
+        {"text": "Functional style is more elegant and composable", "abstract": 2, "human": 0},
+        {"text": "Imperative style is clearer and more direct", "abstract": -2, "human": 1},
+        {"text": "Mix both based on the problem domain", "abstract": 0, "human": 1},
+        {"text": "Whatever the team is most comfortable with", "abstract": 0, "human": 2}
+      ]
+    },
+    {
+      "id": 8,
+      "question": "My attitude toward code reuse is:",
+      "options": [
+        {"text": "DRY (Don't Repeat Yourself) is a fundamental principle", "abstract": 1, "human": 0},
+        {"text": "Some duplication is better than wrong abstraction", "abstract": -1, "human": 1},
+        {"text": "Build reusable components from the start", "abstract": 2, "human": -1},
+        {"text": "Optimize for readability first, reuse second", "abstract": -1, "human": 2}
+      ]
+    },
+    {
+      "id": 9,
+      "question": "For testing, I believe in:",
+      "options": [
+        {"text": "Comprehensive unit tests for every function", "abstract": -1, "human": -1},
+        {"text": "Property-based testing and generative tests", "abstract": 2, "human": -2},
+        {"text": "Integration tests that verify user scenarios", "abstract": 0, "human": 2},
+        {"text": "Whatever catches bugs most effectively", "abstract": 0, "human": 0}
+      ]
+    },
+    {
+      "id": 10,
+      "question": "When debugging, I typically:",
+      "options": [
+        {"text": "Use a debugger to step through code systematically", "abstract": -1, "human": 0},
+        {"text": "Add print statements to understand data flow", "abstract": -2, "human": 1},
+        {"text": "Reason about the code logically first", "abstract": 1, "human": 1},
+        {"text": "Write tests to isolate the problem", "abstract": 0, "human": -1}
+      ]
+    },
+    {
+      "id": 11,
+      "question": "My preferred approach to configuration is:",
+      "options": [
+        {"text": "Simple key-value pairs in plain text files", "abstract": -2, "human": 2},
+        {"text": "Type-safe configuration with validation", "abstract": 1, "human": -1},
+        {"text": "DSLs that express configuration declaratively", "abstract": 2, "human": 0},
+        {"text": "Convention over configuration", "abstract": 1, "human": 1}
+      ]
+    },
+    {
+      "id": 12,
+      "question": "When it comes to performance optimization:",
+      "options": [
+        {"text": "Measure first, optimize bottlenecks only", "abstract": 0, "human": 0},
+        {"text": "Write efficient code from the beginning", "abstract": -1, "human": -2},
+        {"text": "Use high-level optimizations and let tools handle details", "abstract": 2, "human": 1},
+        {"text": "Profile and optimize the critical path", "abstract": -1, "human": -1}
+      ]
+    },
+    {
+      "id": 13,
+      "question": "For code organization, I prefer:",
+      "options": [
+        {"text": "Flat structures with clear file naming", "abstract": -1, "human": 2},
+        {"text": "Layered architectures with clear boundaries", "abstract": 1, "human": 0},
+        {"text": "Domain-driven design principles", "abstract": 2, "human": 1},
+        {"text": "Whatever the framework/language suggests", "abstract": 0, "human": 1}
+      ]
+    },
+    {
+      "id": 14,
+      "question": "My approach to learning new technologies is:",
+      "options": [
+        {"text": "Start with tutorials and examples", "abstract": -1, "human": 2},
+        {"text": "Read the documentation thoroughly first", "abstract": 0, "human": 0},
+        {"text": "Understand the underlying principles", "abstract": 2, "human": -1},
+        {"text": "Jump in and learn by doing", "abstract": -2, "human": 1}
+      ]
+    },
+    {
+      "id": 15,
+      "question": "When writing algorithms, I focus on:",
+      "options": [
+        {"text": "Correctness and clarity above all", "abstract": -1, "human": 2},
+        {"text": "Optimal time and space complexity", "abstract": 0, "human": -2},
+        {"text": "Elegant mathematical formulation", "abstract": 2, "human": -1},
+        {"text": "Practical performance in real scenarios", "abstract": -1, "human": 0}
+      ]
+    },
+    {
+      "id": 16,
+      "question": "For dependency management, I prefer:",
+      "options": [
+        {"text": "Minimal dependencies, build things myself", "abstract": -1, "human": -1},
+        {"text": "Curated, well-maintained libraries", "abstract": 0, "human": 1},
+        {"text": "Composable micro-libraries", "abstract": 2, "human": 0},
+        {"text": "Batteries-included frameworks", "abstract": 1, "human": 2}
+      ]
+    },
+    {
+      "id": 17,
+      "question": "My attitude toward type systems is:",
+      "options": [
+        {"text": "Strong static types prevent entire classes of bugs", "abstract": 1, "human": -1},
+        {"text": "Dynamic types offer more flexibility", "abstract": 0, "human": 1},
+        {"text": "Dependent types can encode program correctness", "abstract": 2, "human": -2},
+        {"text": "Whatever helps the team be productive", "abstract": 0, "human": 2}
+      ]
+    },
+    {
+      "id": 18,
+      "question": "When refactoring code, I prioritize:",
+      "options": [
+        {"text": "Improving readability and maintainability", "abstract": -1, "human": 2},
+        {"text": "Extracting reusable abstractions", "abstract": 2, "human": 0},
+        {"text": "Optimizing performance and resource usage", "abstract": 0, "human": -2},
+        {"text": "Reducing complexity and coupling", "abstract": 1, "human": 1}
+      ]
+    },
+    {
+      "id": 19,
+      "question": "For user interfaces, I believe in:",
+      "options": [
+        {"text": "Simple, intuitive designs that anyone can use", "abstract": -1, "human": 2},
+        {"text": "Powerful tools with rich functionality", "abstract": 1, "human": -1},
+        {"text": "Declarative UI frameworks", "abstract": 2, "human": 0},
+        {"text": "Consistent platform conventions", "abstract": 0, "human": 1}
+      ]
+    },
+    {
+      "id": 20,
+      "question": "My philosophy on software architecture is:",
+      "options": [
+        {"text": "Start simple, add complexity only when needed", "abstract": -1, "human": 1},
+        {"text": "Design for extensibility from the beginning", "abstract": 2, "human": -1},
+        {"text": "Follow proven patterns and practices", "abstract": 1, "human": 0},
+        {"text": "Optimize for team understanding and collaboration", "abstract": 0, "human": 2}
+      ]
+    }
+  ]
+} 

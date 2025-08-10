@@ -1,0 +1,47 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Nim
+        uses: jiro4989/setup-nim-action@v1
+        with:
+          nim-version: '2.2.4'
+
+      - name: Install Nimble
+        run: |
+          curl https://nim-lang.org/choosenim/init.sh -sSf | sh -s -- -y
+          export PATH=$HOME/.nimble/bin:$PATH
+          echo "$HOME/.nimble/bin" >> $GITHUB_PATH
+
+      - name: Build
+        run: |
+          export PATH=$HOME/.nimble/bin:$PATH
+          nim js -d:release main.nim
+          mkdir -p dist
+          cp -r index.html style.css main.js dist/
+          touch dist/.nojekyll
+          echo "/* Disable Jekyll */" > dist/.nojekyll
+        continue-on-error: false
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          branch: gh-pages
+          clean: true
+          single-commit: true 
