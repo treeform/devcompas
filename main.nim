@@ -1,4 +1,4 @@
-import std/[dom, json, strformat, strutils]
+import std/[dom, json, strformat, strutils, random]
 
 type
   Question = object
@@ -171,15 +171,23 @@ proc showResults() =
     humanScore.textContent = "0 Neutral".cstring
 
 proc restartQuiz() =
+  # Reset quiz state
   currentQuestionIndex = 0
   scores = Scores(abstract: 0, human: 0)
   answers = @[]
   
+  # Randomize questions and answers for a fresh experience
+  for question in questions.mitems:
+    question.options.shuffle()
+  questions.shuffle()
+  
+  # Show quiz section and hide results
   let resultsSection = document.getElementById("results-section")
   let quizSection = document.getElementById("quiz-section")
   resultsSection.classList.add("hidden")
   quizSection.classList.remove("hidden")
   
+  # Start showing questions
   showQuestion()
 
 proc loadQuestions() =
@@ -205,7 +213,8 @@ proc loadQuestions() =
       
       questions.add(question)
     
-    showQuestion()
+    # Start the quiz with randomized questions and answers
+    restartQuiz()
   except:
     echo "Error loading questions"
 
@@ -217,6 +226,8 @@ proc setupEventHandlers() =
   restartButton.addEventListener("click", proc(event: Event) = restartQuiz())
 
 proc main(event: Event) =
+  # Initialize random number generator with current time
+  randomize()
   setupEventHandlers()
   loadQuestions()
 
