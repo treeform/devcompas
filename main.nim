@@ -116,12 +116,6 @@ proc createCompass() =
       <text x="{center}" y="20" text-anchor="middle" class="axis-label">Human-Friendly</text>
       <text x="{center}" y="{size - 10}" text-anchor="middle" class="axis-label">Computer-Friendly</text>
       
-      <!-- Quadrant labels -->
-      <text x="{center + 60}" y="40" text-anchor="middle" class="quadrant-label">Abstract &amp;<br/>Human-Friendly</text>
-      <text x="{center - 60}" y="40" text-anchor="middle" class="quadrant-label">Concrete &amp;<br/>Human-Friendly</text>
-      <text x="{center + 60}" y="{size - 20}" text-anchor="middle" class="quadrant-label">Abstract &amp;<br/>Computer-Friendly</text>
-      <text x="{center - 60}" y="{size - 20}" text-anchor="middle" class="quadrant-label">Concrete &amp;<br/>Computer-Friendly</text>
-      
       <!-- User position -->
       <circle cx="{x}" cy="{y}" r="8" fill="#1a1a1a" stroke="#fffff8" stroke-width="2"/>
       <text x="{x}" y="{y + 25}" text-anchor="middle" class="position-label">You</text>
