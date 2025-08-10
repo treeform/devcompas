@@ -118,7 +118,6 @@ h3 {
 .option {
     margin-bottom: 1rem;
     padding: 1rem;
-    border: 1px solid var(--border-color);
     border-radius: 4px;
     transition: background-color 0.2s ease;
     cursor: pointer;
@@ -205,10 +204,9 @@ h3 {
 .philosophy-description {
     font-size: 1.1em;
     line-height: 1.7;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
     padding: 1.5rem;
     background: var(--input-bg);
-    border-left: 4px solid var(--accent-color);
     font-style: italic;
 }
 
