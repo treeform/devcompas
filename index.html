@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Compass - Programming Philosophy Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <section id="welcome-section" class="content-section">
+                <h1>Dev Compass</h1>
+                <p class="narrative">
+                    Discover your programming philosophy through this compass that maps your preferences along two key dimensions: 
+                    <strong>Abstract Style ↔ Concrete Style</strong> and <strong>Easy for Humans ↕ Easy for Computers</strong>.
+                </p>
+                <p class="narrative">
+                    Answer 20 questions about your coding preferences and see where you fall on the developer compass.
+                </p>
+            </section>
+
+            <section id="quiz-section" class="content-section">
+                <div id="progress-bar" class="progress-container">
+                    <div id="progress-fill" class="progress-fill"></div>
+                    <span id="progress-text" class="progress-text">Question 1 of 20</span>
+                </div>
+
+                <div id="question-container" class="question-container">
+                    <h2 id="question-text" class="question-text"></h2>
+                    <div id="options-container" class="options-container">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                    <button id="next-button" class="next-button" disabled>Next Question</button>
+                </div>
+            </section>
+
+            <section id="results-section" class="content-section hidden">
+                <h2>Your Developer Compass</h2>
+                <div id="compass-container" class="compass-container">
+                    <!-- SVG compass will be inserted here -->
+                </div>
+                <div id="results-text" class="results-text">
+                    <h3>Your Programming Philosophy</h3>
+                    <p id="philosophy-description" class="philosophy-description"></p>
+                    <div class="score-breakdown">
+                        <div class="score-item">
+                            <span class="score-label">Abstract ↔ Concrete:</span>
+                            <span id="abstract-score" class="score-value"></span>
+                        </div>
+                        <div class="score-item">
+                            <span class="score-label">Human ↔ Computer Friendly:</span>
+                            <span id="human-score" class="score-value"></span>
+                        </div>
+                    </div>
+                </div>
+                <button id="restart-button" class="restart-button">Take Quiz Again</button>
+            </section>
+        </main>
+    </div>
+
+
+</body>
+</html> 
