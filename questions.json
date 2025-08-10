@@ -54,10 +54,10 @@
       "id": 6,
       "question": "For data structures, I prefer:",
       "options": [
-        {"text": "Simple arrays and objects that anyone can understand", "abstract": -2, "human": 2},
-        {"text": "Specialized structures that encode invariants", "abstract": 2, "human": -1},
-        {"text": "Whatever gives the best performance characteristics", "abstract": 0, "human": -2},
-        {"text": "Standard library collections", "abstract": 0, "human": 0}
+        {"text": "Simple arrays and objects that anyone can understand", "abstract": -2, "human": -2},
+        {"text": "Object-oriented with inheritance and interfaces", "abstract": 2, "human": 0 },
+        {"text": "Fuctincal style with immutable data", "abstract": 2, "human": -2},
+        {"text": "What is natural for the problem domain", "abstract": 0, "human": 0}
       ]
     },
     {
@@ -182,12 +182,12 @@
     },
     {
       "id": 19,
-      "question": "For user interfaces, I believe in:",
+      "question": "For making user interfaces, I believe in:",
       "options": [
-        {"text": "Simple, intuitive designs that anyone can use", "abstract": -1, "human": 2},
-        {"text": "Powerful tools with rich functionality", "abstract": 1, "human": -1},
-        {"text": "Declarative UI frameworks", "abstract": 2, "human": 0},
-        {"text": "Consistent platform conventions", "abstract": 0, "human": 1}
+        {"text": "Simple, easy to edit HTML/CSS", "abstract": -1, "human": -2},
+        {"text": "Powerful WYSIWYG editors with rich functionality (Figma, etc.)", "abstract": 1, "human": 2},
+        {"text": "Declarative UI frameworks (React, Vue, etc.)", "abstract": 2, "human": 0},
+        {"text": "Consistent platform conventions (SwiftUI, WinUI, etc.)", "abstract": 0, "human": 0}
       ]
     },
     {
