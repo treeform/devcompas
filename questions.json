@@ -17,7 +17,7 @@
         {"text": "Descriptive, self-documenting names even if they're long", "abstract": 2, "human": 2},
         {"text": "Short, concise names and abbreviations", "abstract": -1, "human": 0},
         {"text": "Domain-specific terminology and conventions", "abstract": 0, "human": 0},
-        {"text": "Pefixes and suffixes", "abstract": 2, "human": -2}
+        {"text": "Prefixes and suffixes", "abstract": 2, "human": -2}
       ]
     },
     {
